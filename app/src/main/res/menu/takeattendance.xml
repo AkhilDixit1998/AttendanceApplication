@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="All Present" android:id="@+id/takeAtteAllP"></item>
+    <item android:title="All Absent" android:id="@+id/takeAtteAllAb"></item>
+    <item android:title="Generate Report" android:id="@+id/takeAttereport"></item>
+</menu>

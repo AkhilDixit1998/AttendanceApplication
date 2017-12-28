@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainicons">#DCE5E4</color>
+    <color name="branch">#bdc3c7</color>
+    <color name="appbar">#fff</color>
+    <color name="sunflower">#f1c40f</color>
+    <color name="addbatcheditext">#bdc3c7</color>
+    <color name="addbatchbackground">#444444</color>
+    <color name="addbatchappbar">#323232</color>
+    <color name="addbatchbackbackground">#191919</color>
+
+    <color name="addstudentappbar">#0288D1</color>
+</resources>

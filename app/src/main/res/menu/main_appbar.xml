@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="all">
+
+    <item android:title="Teacher" android:id="@+id/teacher"></item>
+    <item android:title="Student" android:id="@+id/student"></item>
+    <item android:title="Sync.." android:id="@+id/sync"></item>
+
+</group>
+</menu>

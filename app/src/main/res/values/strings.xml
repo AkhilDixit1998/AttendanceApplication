@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Mark Up</string>
+
+    <string-array name="values">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+
+    </string-array>
+
+    <string-array name="spinnerItems">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    
+    <string name="subjectdetails">&#xf19d;</string>
+    <string name="selectType">&#xf03a;</string>
+    <string name="year">&#xf2c0;</string>
+    <string name="student">&#xf0c0;</string>
+    <string name="clock">&#xf017;</string>
+    <string name="next">&#xf105;</string>
+    <string name="previous">&#xf104;</string>
+
+    <string name="user">&#xf007;</string>
+    <string name="academic">&#xf046;</string>
+
+    <string name="tick">&#xf00c;</string>
+    <string name="edit">&#xf044;</string>
+    <string name="delete">&#xf1f8;</string>
+    <string name="arrowup">&#xf106;</string>
+    <string name="arrowdown">&#xf107;</string>
+
+    <string name="addStudents">&#xf2bd;</string>
+    <string name="dots">&#xf142;</string>
+    <string name="books">&#xf02d;</string>
+    <string name="plus">&#xf067;</string>
+    <string name="cancel">&#xf00d;</string>
+    <string name="attendance">&#xf2c3;</string>
+</resources>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addbatch_relative">
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/addbatchbackbackground"
+    android:id="@+id/transitions"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/addbatchappbar"
+        android:paddingTop="11dp"
+        android:id="@+id/appbar_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="@string/cancel"
+            android:textAlignment="center"
+            android:textSize="26dp"
+            android:textColor="@color/appbar"
+            android:paddingTop="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/addbatch_appbar_cross"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/appbar"
+            android:textAlignment="center"
+            android:paddingTop="3dp"
+            android:text="Add Subject"
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp"
+            />
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@color/addbatchbackground">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:text="@string/subjectdetails"
+                   android:layout_marginLeft="8dp"
+                   android:layout_marginBottom="3dp"
+                   android:textColor="#fff"
+                   android:textSize="20dp"
+                   android:id="@+id/font_subjectDetails"/>
+            <com.akhil.akhildixit.offlineatten.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject Details"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"/>
+           </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:visibility="invisible"
+                android:id="@+id/anim_subjectName"
+                android:paddingLeft="12dp"
+                android:textColor="@color/sunflower"
+                />
+            <EditText
+
+                android:textCursorDrawable="@drawable/editextcursor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:id="@+id/addbatch_course"
+                android:hint="Subject Name"
+                android:textColor="#fff"
+                android:layout_marginLeft="6dp"
+                android:textColorHint="#7f8c8d"
+                android:maxLines="1"
+                android:backgroundTint="@color/addbatcheditext"
+                android:textColorHighlight="@color/sunflower"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Branch"
+                android:visibility="invisible"
+                android:id="@+id/anim_departName"
+
+                android:paddingLeft="12dp"
+                android:textColor="@color/sunflower"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="6dp"
+                android:textColor="#fff"
+                android:textCursorDrawable="@drawable/editextcursor"
+                android:id="@+id/addbatch_branch"
+                android:hint="Branch"
+                android:maxLines="1"
+                android:backgroundTint="@color/addbatcheditext"
+                android:textColorHint="#7f8c8d"
+                android:textColorHighlight="#f1c40f"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batch"
+                android:visibility="invisible"
+                android:id="@+id/anim_division"
+
+                android:paddingLeft="12dp"
+                android:textColor="@color/sunflower"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="6dp"
+                android:hint="Batch"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:textCursorDrawable="@drawable/editextcursor"
+                android:backgroundTint="@color/addbatcheditext"
+                android:id="@+id/addbatch_batch"
+                android:textColorHint="#7f8c8d"
+                android:textColorHighlight="#f1c40f"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@color/addbatchbackground"
+            android:layout_marginTop="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:text="@string/selectType"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:id="@+id/font_selectType"/>
+            <com.akhil.akhildixit.offlineatten.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Type"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addbatch_radiogroup"
+                android:layout_marginLeft="6dp"
+                android:checkedButton="@+id/addbatch_lecture"
+                android:backgroundTint="@color/sunflower">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lecture"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/addbatch_lecture"
+                    android:buttonTint="@color/sunflower"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Practical"
+                    android:id="@+id/addbatch_practical"
+                    android:buttonTint="#bdc3c7"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:buttonTint="#bdc3c7"
+                    android:id="@+id/addbatch_seminar"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Seminar"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:buttonTint="#bdc3c7"
+                    android:id="@+id/addbatch_workshop"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Workshop"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#bdc3c7"
+                    android:id="@+id/addbatch_exam"
+                    android:textColor="@android:color/white"
+                    android:text="Exam"/>
+            </RadioGroup>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@color/addbatchbackground"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:text="@string/year"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:id="@+id/font_year"/>
+
+            <com.akhil.akhildixit.offlineatten.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year/Standard"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"/>
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:text="@string/previous"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:id="@+id/font_previous"/>
+
+            <com.wefika.horizontalpicker.HorizontalPicker
+                android:id="@+id/picker"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:ellipsize="start"
+                android:marqueeRepeatLimit="-1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:values="@array/values"
+                app:dividerSize="8dp"
+                app:sideItems="0"/>
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:text="@string/next"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="13dp"
+                    android:textSize="20dp"
+                    android:id="@+id/font_next"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@color/addbatchbackground"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:text="@string/clock"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:id="@+id/font_schedule"/>
+
+            <com.akhil.akhildixit.offlineatten.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Details"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject Timetable"
+                android:paddingLeft="12dp"
+                android:textColor="@android:color/white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:id="@+id/addbatch_addtimetable"
+                android:paddingTop="10dp"
+                >
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add new"
+                android:textColor="#f1c40f"
+                android:id="@+id/addbatch_addnew"
+                android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/addbatchbackbackground"
+                ></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addbatch_savefab"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginRight="17dp"
+       fab:backgroundTint="@color/sunflower"
+        android:src="@drawable/contentsave"
+        android:elevation="20dp"/>
+</RelativeLayout>

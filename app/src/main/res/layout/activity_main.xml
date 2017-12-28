@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpape"
+    tools:context="com.akhil.akhildixit.offlineatten.activities.otheractivities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#3F4247"
+            android:paddingTop="11dp"
+            android:id="@+id/appbar_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="@string/books"
+                android:textSize="23dp"
+                android:textColor="@color/appbar"
+                android:paddingTop="6dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/main_activity_books"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@color/appbar"
+                android:textAlignment="center"
+                android:paddingTop="3dp"
+                android:id="@+id/mainac_mysubje"
+                android:text="My Subjects"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="23dp"
+                android:textAlignment="center"
+                android:textColor="@color/appbar"
+                android:layout_marginLeft="145dp"
+                android:paddingTop="6dp"
+                android:text="@string/dots"
+                android:id="@+id/appbar_dots"
+                android:layout_marginTop="1dp"/>
+
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_top_scroll">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/main_linear"
+       android:orientation="vertical"
+       android:paddingTop="8dp"
+       android:paddingLeft="5dp"
+       android:paddingRight="5dp">
+
+   </LinearLayout>
+    </ScrollView>
+
+
+    </LinearLayout>
+
+   <android.support.design.widget.FloatingActionButton
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true"
+       android:layout_marginBottom="15dp"
+       android:layout_marginRight="15dp"
+     fab:backgroundTint="#f1c40f"
+       android:src="@drawable/fab_add"
+       android:pointerIcon="arrow"
+       android:id="@+id/main_floating"
+        />
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#DA4336"
+            android:paddingTop="11dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="@string/attendance"
+                android:textSize="23dp"
+                android:textColor="@color/appbar"
+                android:paddingTop="6dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/viewattendance_appbar_book"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/appbar"
+                android:textAlignment="center"
+                android:paddingTop="3dp"
+                android:text="View Attendance"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="23dp"
+                android:textAlignment="center"
+                android:textColor="@color/appbar"
+                android:layout_marginLeft="115dp"
+                android:paddingTop="6dp"
+                android:text="@string/dots"
+                android:id="@+id/viewattendance_dots"
+                android:layout_marginTop="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viewattendance_spinner"
+            android:layout_height="50dp"></Spinner>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Go"
+            android:id="@+id/viewattendance_button"
+            android:background="@drawable/viewattenbtn"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/viewattendance_linear"
+            android:visibility="invisible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:text="RollNumber"
+                android:paddingTop="7dp"
+                android:textColor="#000"
+                android:layout_marginLeft="30dp"/>
+
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:text="Name"
+                android:textColor="#000"
+                android:paddingTop="7dp"
+                android:layout_marginLeft="60dp"/>
+
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:text="Status"
+                android:textColor="#000"
+                android:paddingTop="7dp"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewattendance_list"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+
+            android:dividerHeight="1.2dp"
+            android:background="@drawable/liststyle"
+
+
+            ></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

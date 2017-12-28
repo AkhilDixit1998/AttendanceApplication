@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/addstudent_linear">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:orientation="horizontal"
+           android:background="@color/addstudentappbar">
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:textSize="16dp"
+               android:textColor="#fff"
+               android:id="@+id/addstudent_appbar_student"
+               android:text="@string/student"
+               android:layout_marginLeft="25dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="My Students"
+               android:layout_marginTop="10dp"
+               android:textColor="#fff"
+               android:textSize="22dp"
+               android:layout_marginLeft="15dp"/>
+
+           <TextView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:textSize="23dp"
+               android:textAlignment="center"
+               android:textColor="@color/appbar"
+               android:layout_marginLeft="130dp"
+               android:paddingTop="6dp"
+               android:text="@string/dots"
+               android:id="@+id/addstudent_appbar_dots"
+               android:layout_marginTop="10dp"/>
+
+
+
+       </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addstudent_scrollview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addstudent_linear"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addstudent_floatBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/addstudentappbar"
+        android:src="@drawable/accountplus"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addstudent_inputdata_linear"
+    >
+
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="16dp"
+        android:id="@+id/addstudent_inputdata_textroll"
+        android:layout_gravity="center"
+        android:text="RollNumber"
+        android:textSize="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="220dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Rollnumber"
+        android:layout_marginTop="1dp"
+        android:id="@+id/addstudent_inputdata_roll"/>
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="16dp"
+        android:id="@+id/addstudent_inputdata_textname"
+        android:layout_gravity="center"
+        android:text="Name"
+
+        android:textSize="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"/>
+    <EditText
+        android:layout_width="220dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Name"
+        android:id="@+id/addstudent_inputdata_name"/>
+</LinearLayout>
