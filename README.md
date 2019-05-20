@@ -16,9 +16,9 @@ This application is built for android platform in JAVA.
 ## Screenshots
 <br>
 
-<img src="https://github.com/AkhilDixit1998/MarkUp-Android/blob/master/markup%20ss/a.png" width="300" height="450">
+<img src="https://github.com/AkhilDixit1998/MarkUp-Android/blob/master/markup%20ss/a.png" width="300" height="450">  (Snap Shot)
 <span width="50px"></span>
-<img src="https://github.com/AkhilDixit1998/MarkUp-Android/blob/master/markup%20ss/markup.gif" width="300" height="450">
+<img src="https://github.com/AkhilDixit1998/MarkUp-Android/blob/master/markup%20ss/markup.gif" width="300" height="450"> (GIF)
 <br>
 
 
